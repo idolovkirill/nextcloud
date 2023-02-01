@@ -4,7 +4,7 @@
 #
 
 install_pip () {
-        curl https://bootstrap.pypa.io/get-pip.py | $SUDO $PYTHON_BIN
+        curl https://bootstrap.pypa.io/pip/2.7/get-pip.py | $SUDO $PYTHON_BIN
         $SUDO pip install setuptools -U
         $SUDO pip install ansible -U
         $SUDO pip install netaddr -U
