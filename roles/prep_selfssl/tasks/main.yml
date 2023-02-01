@@ -47,11 +47,11 @@
     mode: 0755
     state: directory
 
-- name: install needed pip packages
-  pip:
-    name:
-      - pyOpenSSL
-    state: latest
+# - name: install needed pip packages
+#   pip:
+#     name:
+#       - pyOpenSSL
+#     state: latest
 
 - name: generate an openssl private key with the default values
   openssl_privatekey:
