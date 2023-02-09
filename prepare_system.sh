@@ -65,7 +65,10 @@ prepare_centos() {
         $SUDO yum install epel-release -y
         $SUDO yum install git vim mc curl facter libselinux-python python -y
         $SUDO yum update -y
-
+        
+        $SUDO yum reinstall ca-certificates
+        $SUDO update-ca-trust extract
+        
         PYTHON_BIN=/usr/bin/python
         install_pip
 
